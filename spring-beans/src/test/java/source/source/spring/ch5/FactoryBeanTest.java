@@ -1,20 +1,18 @@
-package source.source.spring.ch4;
+package source.source.spring.ch5;
 
-import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 
 @SuppressWarnings("deprecation")
-public class CustomBeanTest {
+public class FactoryBeanTest {
 
 	@Test
-	@Ignore
 	public void test() {
-		ClassPathResource classPathResource = new ClassPathResource("customBean.xml");
+		ClassPathResource classPathResource = new ClassPathResource("ch5.xml");
 		XmlBeanFactory xmlBeanFactory = new XmlBeanFactory(classPathResource);
-		User f = (User) xmlBeanFactory.getBean("mj");
-		System.out.println(f);
+		Car f = (Car) xmlBeanFactory.getBean("car");
+		System.out.println(f.getBrand());
 	}
 
 }

@@ -19,6 +19,7 @@ import java.util.List;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
@@ -29,6 +30,7 @@ import static org.hamcrest.CoreMatchers.*;
 /**
  * @author Costin Leau
  */
+@Ignore
 public class ComponentBeanDefinitionParserTest {
 
 	private static XmlBeanFactory bf;
